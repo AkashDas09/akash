@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: aqua;
+        }
+        li{
+            float: left;
+            border-right: 1px solid black;
+        }
+        li:last-child{
+            border-right: none;
+        }
+        li a{
+            display: block;
+            color: brown;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover:not(.active){
+            background-color: blueviolet;
+        }
+        .active{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li> <a class="active" href="#">Home</a></li>
+        <li><a href="#news">news</a></li>
+        <li><a href="#contact">contact</a></li>
+        <li style="float:right"><a href="#login">login</a></li>
+        <li style="float:right"><a href="#register">register</a></li>
+    </ul>
+</body>
+</html>
